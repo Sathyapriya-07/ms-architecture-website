@@ -12,6 +12,7 @@ body{
     font-family:'Poppins',sans-serif;
     line-height:1.7;
     color:#333;
+    background:#ffffff;
 }
 
 /* Navigation */
@@ -21,7 +22,7 @@ nav{
     justify-content:space-between;
     align-items:center;
     padding:20px 60px;
-    background:#111;
+    background:#1B365D;
     position:sticky;
     top:0;
     z-index:1000;
@@ -46,14 +47,14 @@ nav a{
 }
 
 nav a:hover{
-    color:#d4af37;
+    color:#7DB7FF;
 }
 
 /* Hero Section */
 
 .hero{
     height:100vh;
-    background:#f5f5f5;
+    background:#F7F9FC;
     display:flex;
     justify-content:center;
     align-items:center;
@@ -67,13 +68,13 @@ nav a:hover{
 
 .hero h1{
     font-size:4rem;
-    color:#111;
+    color:#1B365D;
     margin-bottom:15px;
 }
 
 .hero p{
     font-size:1.3rem;
-    color:#666;
+    color:#4A5568;
 }
 
 /* Common Sections */
@@ -86,7 +87,7 @@ section h2{
     text-align:center;
     font-size:2.5rem;
     margin-bottom:25px;
-    color:#111;
+    color:#1B365D;
 }
 
 section p{
@@ -104,7 +105,7 @@ section p{
 /* Services */
 
 .services{
-    background:#f8f8f8;
+    background:#EEF3F8;
 }
 
 .service-box{
@@ -117,7 +118,7 @@ section p{
     margin:12px 0;
     padding:15px;
     border-radius:8px;
-    box-shadow:0 2px 8px rgba(0,0,0,0.08);
+    box-shadow:0 2px 8px rgba(27,54,93,0.08);
 }
 
 /* Projects */
@@ -134,10 +135,11 @@ section p{
 }
 
 .card{
-    background:#f8f8f8;
+    background:#F7F9FC;
     padding:30px;
     border-radius:10px;
-    box-shadow:0 3px 10px rgba(0,0,0,0.1);
+    border:1px solid #D6E2F0;
+    box-shadow:0 3px 10px rgba(27,54,93,0.08);
     text-align:center;
     transition:0.3s;
 }
@@ -148,12 +150,13 @@ section p{
 
 .card h3{
     margin-bottom:15px;
+    color:#1B365D;
 }
 
 /* Contact */
 
 .contact{
-    background:#f8f8f8;
+    background:#EEF3F8;
 }
 
 .contact p{
@@ -163,7 +166,7 @@ section p{
 /* Footer */
 
 footer{
-    background:#111;
+    background:#1B365D;
     color:white;
     text-align:center;
     padding:20px;
