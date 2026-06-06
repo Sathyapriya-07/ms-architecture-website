@@ -36,20 +36,31 @@
     <h2>Services</h2>
 
     <div class="service-box">
-       
-        <p>
-            <summary>Drawing</summary>
 
-            <p>Architectural Drawing</p>
-            <p>Electrical Drawing</p>
-            <p>Plumbing Drawing</p>
-        </p>
+        <div class="service-item">
+            <button class="dropdown-btn">Drawing</button>
+
+            <div class="dropdown-content">
+                <p>Architectural Drawing</p>
+                <p>Electrical Drawing</p>
+                <p>Plumbing</p>
+            </div>
+        </div>
 
         <p>Modeling</p>
         <p>Rendering</p>
-        <p>Walk through</p>
+        <p>Walk Through</p>
 
-    </div>
+</div>
+
+<script>
+const dropdown = document.querySelector('.dropdown-btn');
+const content = document.querySelector('.dropdown-content');
+
+dropdown.addEventListener('click', () => {
+    content.classList.toggle('show');
+});
+</script>
 </section>
 
 <section id="projects" class="projects">
