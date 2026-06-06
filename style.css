@@ -10,9 +10,9 @@ html{
 
 body{
     font-family:'Poppins',sans-serif;
-    line-height:1.7;
-    color:#333;
     background:#ffffff;
+    color:#333;
+    line-height:1.7;
 }
 
 /* Navigation */
@@ -29,7 +29,7 @@ nav{
 }
 
 nav h2{
-    color:white;
+    color:#ffffff;
     font-size:24px;
     font-weight:700;
 }
@@ -41,20 +41,21 @@ nav ul{
 }
 
 nav a{
-    color:white;
+    color:#ffffff;
     text-decoration:none;
+    font-weight:500;
     transition:0.3s;
 }
 
 nav a:hover{
-    color:#7DB7FF;
+    color:#A7C7FF;
 }
 
 /* Hero Section */
 
 .hero{
     height:100vh;
-    background:#F7F9FC;
+    background:linear-gradient(135deg,#1B365D,#2E5A9E);
     display:flex;
     justify-content:center;
     align-items:center;
@@ -62,19 +63,17 @@ nav a:hover{
 }
 
 .overlay{
-    max-width:800px;
+    color:white;
     padding:20px;
 }
 
 .hero h1{
     font-size:4rem;
-    color:#1B365D;
     margin-bottom:15px;
 }
 
 .hero p{
     font-size:1.3rem;
-    color:#4A5568;
 }
 
 /* Common Sections */
@@ -85,46 +84,39 @@ section{
 
 section h2{
     text-align:center;
-    font-size:2.5rem;
-    margin-bottom:25px;
     color:#1B365D;
+    font-size:2.5rem;
+    margin-bottom:30px;
 }
 
 section p{
     text-align:center;
 }
 
-/* About */
-
-.about{
-    background:white;
-    max-width:1000px;
-    margin:auto;
-}
-
 /* Services */
 
 .services{
-    background:#EEF3F8;
+    background:#F5F9FF;
 }
 
 .service-box{
-    max-width:500px;
+    max-width:600px;
     margin:auto;
 }
 
 .service-box p{
     background:white;
-    margin:12px 0;
-    padding:15px;
+    margin:15px 0;
+    padding:18px;
+    border-left:5px solid #1B365D;
     border-radius:8px;
-    box-shadow:0 2px 8px rgba(27,54,93,0.08);
+    box-shadow:0 2px 8px rgba(0,0,0,0.08);
 }
 
 /* Projects */
 
 .projects{
-    background:white;
+    background:#ffffff;
 }
 
 .grid{
@@ -135,12 +127,10 @@ section p{
 }
 
 .card{
-    background:#F7F9FC;
+    background:#F5F9FF;
     padding:30px;
-    border-radius:10px;
-    border:1px solid #D6E2F0;
-    box-shadow:0 3px 10px rgba(27,54,93,0.08);
-    text-align:center;
+    border-radius:12px;
+    box-shadow:0 4px 12px rgba(0,0,0,0.08);
     transition:0.3s;
 }
 
@@ -149,18 +139,26 @@ section p{
 }
 
 .card h3{
-    margin-bottom:15px;
     color:#1B365D;
+    text-align:center;
+    margin-bottom:15px;
+}
+
+/* About */
+
+.about{
+    background:#F8FBFF;
 }
 
 /* Contact */
 
 .contact{
-    background:#EEF3F8;
+    background:#F5F9FF;
 }
 
 .contact p{
     margin:10px 0;
+    font-size:18px;
 }
 
 /* Footer */
@@ -169,10 +167,10 @@ footer{
     background:#1B365D;
     color:white;
     text-align:center;
-    padding:20px;
+    padding:25px;
 }
 
-/* Mobile */
+/* Mobile Responsive */
 
 @media(max-width:768px){
 
@@ -184,12 +182,16 @@ footer{
 
     nav ul{
         flex-direction:column;
-        gap:10px;
         text-align:center;
+        gap:12px;
     }
 
     .hero h1{
         font-size:2.5rem;
+    }
+
+    .hero p{
+        font-size:1rem;
     }
 
     section h2{
